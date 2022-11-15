@@ -11,4 +11,8 @@ export class LoginRecordService extends BaseService {
     async insert(dto)  {
         return await this._repo.create(dto)
     }
+
+    async list() {
+        return await this._repo.find()
+    }
 }
